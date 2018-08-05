@@ -19,10 +19,10 @@ public class BookingsFilterOperator implements Operator {
 	 */
 	public void filterBy(WebDriver browser, String filter) {
 		WebElement searchBox;
-		if(filter.contains("5")) {
-			searchBox = browser.findElement(By.xpath("//*[@id=\"filter_class\"]/div/a/div/span[contains(text(), " + filter + ") and contains(text(), 'stars')]"));
-		} else {
+		if(filter.contains("Sauna")) {
 			searchBox = browser.findElement(By.xpath("//*[@id=\"filter_popular_activities\"]/div/a/div/span[contains(text(), " + filter + ")]"));
+		} else {
+			searchBox = browser.findElement(By.xpath("//*[@id=\"filter_class\"]/div/a/div/span[contains(text(), " + filter + ") and contains(text(), 'stars')]"));
 		}
 		
 		searchBox.click();
