@@ -57,13 +57,14 @@ public class BookingsFilterOperator implements Operator {
 		int temp = 0;
 		
 	    //Check if the date is within the current year, otherwise we add on to the counter
-		if(checkDate.contains("" + currentDate.get(Calendar.YEAR))) {	
+		if(checkDate.contains("" + currentDate.get(Calendar.YEAR))) {
 			month = month - (currentDate.get(Calendar.MONTH));
 		} else {
 			temp = 12 - (currentDate.get(Calendar.MONTH));
 			month = temp + month;
 		}
 		
+
 		//Select the datepicker element
 		browser.findElement(By.cssSelector(".b-datepicker")).click();
 		
