@@ -2,9 +2,9 @@
 
 Tools used:
 
-Java 1.8
-Eclipse Photon with Maven
-Selenium 3.13.0
+Java 1.8,
+Eclipse Photon with Maven,
+Selenium 3.13.0,
 ChromeDriver 2.41
 
 How to run tests:
